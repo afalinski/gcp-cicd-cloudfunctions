@@ -25,9 +25,12 @@ steps:
   id: DEPLOY
 
 substitutions:
-    _FUNCTION_PROJECT : astahov-staging
+    _FUNCTION_PROJECT : staging-443611
     _FUNCTION_NAME    : my-nodejs-app
-    _FUNCTION_REGION  : northamerica-northeast1
-    _FUNCTION_RUNTIME : nodejs14
+    _FUNCTION_REGION  : us-west2
+    _FUNCTION_RUNTIME : nodejs20
     _ENTRY_POINT      : helloWorld
+    
+options:
+  logging: CLOUD_LOGGING_ONLY
 
